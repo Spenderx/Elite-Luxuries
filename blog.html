@@ -5,72 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Luxuries Blog</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #0a0a0a;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            text-align: center;
-            padding: 50px;
-            background: linear-gradient(to right, #111, #444);
-        }
-        .header h1 {
-            font-size: 48px;
-            color: gold;
-            text-transform: uppercase;
-        }
-        .content {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-        .post {
-            background: #1a1a1a;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
-        }
-        .post h2 {
-            color: gold;
-        }
-        .post img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: #111;
-            color: gray;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <h1>Elite Luxuries Blog</h1>
-        <p>Stay updated with the latest trends in luxury fashion, cars, travel, and more!</p>
-    </div>
-    
-    <div class="content">
-        <div class="post">
-            <h2>🔥 The Most Expensive Watches in the World</h2>
-            <img src="luxury-watch.jpg" alt="Luxury Watch">
-            <p>Luxury watches are more than just timepieces – they are symbols of status, precision, and craftsmanship.</p>
+    <header>
+        <h1>Elite Luxuries</h1>
+        <nav>
             <ul>
-                <li><strong>💎 Graff Diamonds Hallucination – $55 Million</strong></li>
-                <li><strong>⌚ Patek Philippe Grandmaster Chime – $31 Million</strong></li>
-                <li><strong>🔥 Jacob & Co. Billionaire Watch – $18 Million</strong></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Luxury Watches</a></li>
+                <li><a href="#">Luxury Cars</a></li>
+                <li><a href="#">Exclusive Travel</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </div>
-    </div>
-    
-    <div class="footer">
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to the Elite Luxuries Blog</h2>
+        <p>Stay updated with the latest trends in luxury fashion, cars, travel, and more!</p>
+    </section>
+
+    <section class="blog-posts">
+        <article>
+            <img src="watch.jpg" alt="Luxury Watch">
+            <h3>🔥 The Most Expensive Watches in the World</h3>
+            <p>Luxury watches are more than just timepieces – they are symbols of status, precision, and craftsmanship.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <img src="car.jpg" alt="Luxury Car">
+            <h3>🚗 The Most Expensive Cars Ever Made</h3>
+            <p>From Bugatti to Rolls-Royce, explore the top luxury cars that only billionaires can afford.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <img src="travel.jpg" alt="Luxury Travel">
+            <h3>✈️ Exclusive Luxury Travel Destinations</h3>
+            <p>Discover hidden gems and ultra-luxurious destinations that redefine travel.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <footer>
         <p>&copy; 2025 Elite Luxuries. All Rights Reserved.</p>
-    </div>
+    </footer>
 </body>
 </html>
