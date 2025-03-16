@@ -166,15 +166,14 @@ footer {
     color: white;
 }
 
-        </style>
-/* Smooth fade-in effects for sections */
+       
 section {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Fade-in effect when section enters viewport */
+
 window.addEventListener("scroll", function() {
     document.querySelectorAll("section").forEach(section => {
         if (section.getBoundingClientRect().top < window.innerHeight - 100) {
@@ -204,7 +203,7 @@ window.addEventListener("scroll", function() {
 gsap.from(".hero h1", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
 gsap.from(".hero p", { duration: 1.2, y: -30, opacity: 0, delay: 0.5 });
 gsap.from(".hero button", { duration: 1.5, scale: 0.5, opacity: 0, delay: 1 });
-
+ </style>
     
 <body>
     <header>
