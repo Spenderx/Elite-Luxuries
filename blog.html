@@ -4,82 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Luxuries Blog</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .header {
-            background: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .nav {
-            display: flex;
-            justify-content: center;
-            background: #222;
-            padding: 10px;
-        }
-        .nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .post {
-            border-bottom: 1px solid #ddd;
-            padding: 20px 0;
-        }
-        .post h2 {
-            color: #000;
-        }
-        .post p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        .footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-    <div class="header">Elite Luxuries Blog</div>
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Luxury Cars</a>
-        <a href="#">Fashion</a>
-        <a href="#">Watches</a>
-        <a href="#">Travel</a>
-    </div>
-    <div class="container">
+    <header>
+        <div class="logo">Elite Luxuries</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Luxury Watches</a></li>
+                <li><a href="#">Luxury Cars</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Elite Luxuries Blog</h1>
+        <p>Stay updated with the latest trends in luxury fashion, cars, travel, and more!</p>
+        <button class="subscribe-btn">Subscribe Now</button>
+    </section>
+    
+    <section class="featured">
         <div class="post">
+            <img src="watch.jpg" alt="Luxury Watch">
             <h2>🔥 The Most Expensive Watches in the World</h2>
             <p>Luxury watches are more than just timepieces – they are symbols of status, precision, and craftsmanship.</p>
-            <ul>
-                <li>💎 Graff Diamonds Hallucination – $55 Million</li>
-                <li>⌚ Patek Philippe Grandmaster Chime – $31 Million</li>
-                <li>🔥 Jacob & Co. Billionaire Watch – $18 Million</li>
-            </ul>
-            <p>🌟 Stay tuned for more luxury insights at Elite Luxuries Blog!</p>
+            <a href="#">Read More</a>
         </div>
-    </div>
-    <div class="footer">© 2025 Elite Luxuries. All rights reserved.</div>
+        <div class="post">
+            <img src="car.jpg" alt="Luxury Car">
+            <h2>🚗 Top 10 Luxury Cars of 2025</h2>
+            <p>Explore the most luxurious cars that redefine automotive excellence.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+    
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get exclusive luxury content straight to your inbox!</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Elite Luxuries. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        gsap.from(".hero h1", { duration: 1, y: -50, opacity: 0, ease: "bounce" });
+        gsap.from(".hero p", { duration: 1.2, y: -30, opacity: 0, delay: 0.5 });
+        gsap.from(".hero button", { duration: 1.5, scale: 0.5, opacity: 0, delay: 1 });
+    </script>
 </body>
 </html>
