@@ -4,57 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Luxuries Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 10px;
+        }
+        .nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        .post h2 {
+            color: #000;
+        }
+        .post p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Elite Luxuries</div>
-        <nav>
+    <div class="header">Elite Luxuries Blog</div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Luxury Cars</a>
+        <a href="#">Fashion</a>
+        <a href="#">Watches</a>
+        <a href="#">Travel</a>
+    </div>
+    <div class="container">
+        <div class="post">
+            <h2>🔥 The Most Expensive Watches in the World</h2>
+            <p>Luxury watches are more than just timepieces – they are symbols of status, precision, and craftsmanship.</p>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Luxury Fashion</a></li>
-                <li><a href="#">Watches</a></li>
-                <li><a href="#">Cars</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>💎 Graff Diamonds Hallucination – $55 Million</li>
+                <li>⌚ Patek Philippe Grandmaster Chime – $31 Million</li>
+                <li>🔥 Jacob & Co. Billionaire Watch – $18 Million</li>
             </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h1>Welcome to Elite Luxuries</h1>
-        <p>Explore the world of high-end fashion, cars, watches, and luxury lifestyle.</p>
-    </section>
-
-    <section class="featured">
-        <h2>Top Luxury Picks</h2>
-        <div class="grid-container">
-            <article>
-                <img src="watch.jpg" alt="Luxury Watch">
-                <h3>The Most Expensive Watches in the World</h3>
-                <p>Discover timepieces that redefine luxury and precision.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <img src="car.jpg" alt="Luxury Car">
-                <h3>Top Luxury Cars of 2025</h3>
-                <p>The ultimate driving experience with premium comfort and power.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <img src="travel.jpg" alt="Luxury Travel">
-                <h3>Exclusive Travel Destinations</h3>
-                <p>Unveiling the most extravagant places to visit around the globe.</p>
-                <a href="#">Read More</a>
-            </article>
+            <p>🌟 Stay tuned for more luxury insights at Elite Luxuries Blog!</p>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Elite Luxuries. All Rights Reserved.</p>
-    </footer>
+    </div>
+    <div class="footer">© 2025 Elite Luxuries. All rights reserved.</div>
 </body>
 </html>
