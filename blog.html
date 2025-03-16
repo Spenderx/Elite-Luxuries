@@ -4,34 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Luxuries Blog</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #111, #444);
+        }
+        .header h1 {
+            font-size: 48px;
+            color: gold;
+            text-transform: uppercase;
+        }
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .post {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+        }
+        .post h2 {
+            color: gold;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Elite Luxuries Blog</h1>
+    <div class="header">
+        <h1>Elite Luxuries Blog</h1>
         <p>Stay updated with the latest trends in luxury fashion, cars, travel, and more!</p>
-    </header>
-
-    <section>
-        <article class="post">
-            <h2><a href="posts/luxury-watches.html">🕰 The Best Luxury Watches in 2025</a></h2>
-            <p>Discover the most luxurious watches that define class and success.</p>
-        </article>
-
-        <article class="post">
-            <h2><a href="posts/luxury-cars.html">🚗 Top Luxury Cars to Own in 2025</a></h2>
-            <p>A deep dive into the most exclusive cars for the ultimate lifestyle.</p>
-        </article>
-
-        <article class="post">
-            <h2><a href="posts/luxury-travel.html">✈️ The Best Luxury Travel Destinations</a></h2>
-            <p>Explore the most breathtaking travel destinations for high-class experiences.</p>
-        </article>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Elite Luxuries. All rights reserved.</p>
-    </footer>
+    </div>
+    
+    <div class="content">
+        <div class="post">
+            <h2>🔥 The Most Expensive Watches in the World</h2>
+            <img src="luxury-watch.jpg" alt="Luxury Watch">
+            <p>Luxury watches are more than just timepieces – they are symbols of status, precision, and craftsmanship.</p>
+            <ul>
+                <li><strong>💎 Graff Diamonds Hallucination – $55 Million</strong></li>
+                <li><strong>⌚ Patek Philippe Grandmaster Chime – $31 Million</strong></li>
+                <li><strong>🔥 Jacob & Co. Billionaire Watch – $18 Million</strong></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Elite Luxuries. All Rights Reserved.</p>
+    </div>
 </body>
 </html>
-
